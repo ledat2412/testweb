@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    
+}
+
+.product-container {
+    display: flex;
+    background-color: #fff;
+    padding: 30px; /* Tăng padding để có thêm khoảng trống */
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15); /* Tăng kích thước bóng đổ */
+    max-width: 1400px; /* Tăng kích thước tối đa của container */
+    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+    /* margin: 10px; Thêm khoảng trống xung quanh */
+    margin: 80px 20px 0px 60px;
+}
+
+.image-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image {
+    width: 350px; /* Tăng kích thước hình ảnh chính */
+    height: auto;
+    border-radius: 10px; /* Làm mượt các góc hình ảnh */
+    margin-bottom: 20px; /* Tạo khoảng cách giữa hình chính và hình nhỏ */
+}
+
+.thumbnail-images img {
+    width: 80px; /* Tăng kích thước ảnh nhỏ */
+    height: auto;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail-images img:hover {
+    transform: scale(1.1);
+}
+
+.product-details {
+    flex: 2;
+    margin-left: 40px; /* Tăng khoảng cách giữa phần ảnh và phần chi tiết */
+}
+
+h2 {
+    font-size: 28px; /* Tăng kích thước tiêu đề sản phẩm */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    margin-bottom: 20px;
+
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 18px; /* Tăng kích thước giá cũ */
+}
+
+.new-price {
+    color: #e74c3c;
+    font-size: 23px; /* Tăng kích thước giá mới */
+    font-weight: bold;
+}
+
+.discount {
+    color: #27ae60;
+    font-size: 15px; /* Tăng kích thước thông tin tiết kiệm */
+}
+
+.product-info p {
+    font-size: 15px; /* Tăng kích thước chữ cho thông tin sản phẩm */
+    margin-bottom: 10px;
+    color:#999;
+}
+
+.size-selection, .quantity-selection {
+    margin-bottom: 15px;
+    
+
+}
+
+.size-btn {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+    padding: 8px 14px; /* Giữ kích thước nhỏ nhưng vẫn đủ rõ ràng */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px; /* Giảm kích thước chữ */
+    border: 2px hidden #302c2e;
+}
+
+.size-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.quantity-label {
+    font-size: 18px; /* Tăng kích thước nhãn số lượng */
+    margin-right: 10px;
+}
+
+.btn-minus, .btn-plus {
+    background-color: white;
+    border: 2px ridge black;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px; /* Tăng kích thước font nút +/- */
+    margin: 0 10px;
+}
+
+#quantity {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column; /* Giữ các nút theo chiều dọc */
+    gap: 15px;
+}
+
+.add-to-cart {
+    background-color: #537a63;
+    color: #fff;
+    border: none;
+    padding: 12px 25px; /* Tăng kích thước nút */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.buy-now {
+    background-color:rgb(232, 51, 51);
+    color: #fff;
+    border: none;
+    padding: 12px 25px; /* Tăng kích thước nút */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.add-to-cart:hover, .buy-now:hover {
+    opacity: 0.9;
+}
+.product-description {
+    margin-top: 40px; /* Khoảng cách phía trên phần mô tả */
+    padding: 20px; /* Khoảng đệm bên trong phần mô tả */
+    border-top: 2px solid #ccc; /* Đường viền phía trên để phân tách */
+    background-color: #f9f9f9; /* Màu nền sáng */
+    position: relative; /* Cho phép điều chỉnh vị trí sau này nếu cần */
+    clear: both; /* Đảm bảo phần này nằm dưới các phần tử đã nổi */
+    font-size: 15px;
+}
+
+/* Tùy chọn: Cách khắc phục vị trí chân trang */
+body {
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    min-height: 100vh; /* Chiều cao tối thiểu của viewport */
+}
+
+.product-container {
+    flex: 1; /* Cho phép phần này mở rộng và chiếm không gian */
+}

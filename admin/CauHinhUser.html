@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/css/all.css">
+</head>
+<body>
+    <section class="admin">
+        <div class="row">
+            <div class="admin-sidebar">
+                <div class="navbar-top">
+                    <img src="./Logo.png" alt="Logo">
+                </div>
+                <div class="sidebar-content">
+                    <ul>
+                        <li class="sidebar-infor">
+                            <a class="items" href="/admin/admin.html">
+                                <i class="fa-brands fa-slack"></i>
+                                Dashboard
+                            </a>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Purchase Order
+                                <ul class="list-menu">
+                                    <li>
+                                        <a class="function" href="/admin/TatCaDonHang.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Tất cả đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaXacNhan.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangChuaXuLy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đang chờ xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaGiao.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng giao thành công
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangHuy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã hủy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Product
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/DanhSachSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Danh sách
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="/admin/ThemSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm thông tin
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Quản lý users
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/CauHinhUser.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Cấu hình users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="/admin/ThemTaiKhoan.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm tài khoản
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content">
+                <div class="content-top">
+                    <div class="left">
+                    </div>
+                    <div class="right">
+                        <ul class="list-content">
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-bell top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-comment top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <img src="../admin/ảnh đại diện.jpg" alt="Ảnh đại diện admin">
+                                    <p>Tôn Quyền</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-heading">
+                        <a class="link-heading" href="">
+                            <h3 class="heading">Quản lý user</h3>
+                        </a>
+                    </div>
+                    <!-- <div class="content-add">
+                        <a href="" class="link-add">
+                            <h3 class="add">Thêm mới</h3>
+                        </a>
+                    </div> -->
+                    <div class="content-body">
+                        <div class="config-user">
+                            <div class="list-user">
+                                <table class="table-user">
+                                        <tr class="tr-title">
+                                            <td class="td-id">ID</td>
+                                            <td class="td-name">Họ và Tên</td>
+                                            <td class="td-phone">SĐT</td>
+                                            <td class="td-address">Địa chỉ</td>
+                                            <td class="td-authority">Quyền hạn</td>
+                                            <td class="td-display">Hiển thị</td>
+                                            <td class="td-task">Tác vụ</td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-infor">
+                                            <td class="td-id">3123411251</td>
+                                            <td class="td-name">Tôn Quyền</td>
+                                            <td class="td-phone">0787554657</td>
+                                            <td class="td-address">27C Phạm Vấn, phường Phú Thọ Hòa, quận Tân Phú</td>
+                                            <td class="td-authority">Admin</td>
+                                            <td class="td-display">
+                                                <a href="#">
+                                                    <i id="icon" class="fa-solid fa-lock" onclick="toggleIcon(this)"></i>
+                                                </a>
+                                            </td>
+                                            <td class="td-task">
+                                                <div class="repair-user">
+                                                    <a href="/admin/SuaThongTinUser.html"><i class="fa-solid fa-pen"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="../admin/CauHinhUser.js"></script>
+</body>
+</html>

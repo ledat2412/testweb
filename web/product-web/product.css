@@ -1,0 +1,161 @@
+/*---------------filter---------------*/
+.filter-section{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.filter-section .filter-heading {
+    font-size: 24px;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000; 
+}
+
+.filter-product{
+    border-style: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*----------product specific----------*/
+.product-specific .product-heading {
+    font-size: 24px;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000; 
+}
+
+.product-specific .product-extend {
+    left: 0;
+    font-size: 13px;
+    position:relative;
+    margin-top: -20px;
+    text-align: center; 
+    /* margin-right: 50px;  */
+    margin-bottom: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.product-specific .product {
+    margin: 0 auto;
+}
+
+.product-specific.product-list {
+    gap: 20px;
+    padding: 0;
+    display: grid;
+    list-style: none;
+    margin: 15px 130px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr); /* Ban đầu chia thành 4 cột */
+}
+
+.product-specific .product-list li {
+    padding: 0;
+    text-align: center;
+}
+
+.product-specific .product-list li:hover .product-buy {
+    bottom: 0px;
+}
+
+.product-specific .product-img {
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.product-specific .product-display {
+    display: block;
+}
+
+.product-specific .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.product-specific .image:hover {
+    transform: scale(1.1); /* Phóng to ảnh 10% khi hover */
+}
+
+.product-specific .product-buy {
+    width: 100%;
+    bottom: -40px;
+    opacity: 0.75;
+    color: white;
+    display: block;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    transition: 0.25s ease-in-out;
+}
+
+.product-specific .product-name {
+    display: block;
+    font-size: 95%;
+    margin-top: 10px;
+    margin-bottom: 13px;
+}
+
+.product-specific .name {
+    color: black;
+    text-decoration: none;
+}
+
+.product-specific .product-price {
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--emphasis-color);
+}
+
+/* Responsive cho thiết bị nhỏ hơn 1024px */
+@media (max-width: 1024px) {
+    .product-specific .product-list {
+        grid-template-columns: repeat(2, 1fr); /* Chuyển thành 2 cột */
+    }
+}
+
+/* Responsive cho thiết bị nhỏ hơn 768px */
+@media (max-width: 768px) {
+    .product-specific .product-list {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+    }
+}
+
+/* Định dạng giao diện cho các phần bộ lọc và sản phẩm */
+.filter-section {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.filter-title {
+    font-weight: bold;
+}
+.checkbox-group, .radio-group {
+    margin-top: 10px;
+}
+.checkbox-group label, .radio-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+

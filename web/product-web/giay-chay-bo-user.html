@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li-Ning</title>
+    <link rel="stylesheet" href="/web/Web.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="/img/logo_compact.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <header class="header">
+            <nav class="header-nav">
+                <div class="right">
+                    <a href="#" class="right-font">Contact Us</a>
+                </div>
+                <div class="header-center">
+                    <a href="/web/Web-user.html"><img class="logo" src="/img/logo_compact.png" alt="logo"/></a>
+                </div> 
+                <div class="left">
+                    <form action="" class="search-box" >
+                        <input type="text" placeholder="Kím con mẹ gì?" class="search-text" >
+                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>   
+
+                    <div class="user-icon" id="non-log">
+                        <button class="dropdown-btn"><i class="fa-regular fa-user"></i></button>
+                        <div class="dropdown-content">
+                            <p>xin chào ....</p>
+                            <a href="/web/Web.html" class="icon-user-btn">Đăng xuất</a>
+                        </div>
+                    </div>
+
+                    <div class="icon-shopping">
+                    <a href="/web/shopcart/shopcart.html" class="left-icon-shopping">
+                        <i class="fa-solid fa-cart-shopping" id="icon-shopping"></i>
+                        <div class="total-products">3</div>  <!-- user -->
+                    </a>
+                    </div>
+                    <!-- phần trong menu -->
+                    <div class="menu-container">
+                        <div class="menu-bar" id="menu-bar">
+                            <div class="menu-icon"></div> 
+                        </div>
+                        <nav class="nav-menu" id="nav-menu">
+                            <ul>
+                                <!-- <li><a href="">Home</a></li>
+                                <li><a href="#product-heading-1">sản phẩm bán chạy</a></li>
+                                <li><a href="#product-heading-2">sản phẩm giảm giá</a></li>
+                                <li><a href="#product-heading-3">sản phẩm </a></li> -->
+                                <li><a href="#">giày chạy bộ</a></li>
+                                <li><a href="#">giày bóng rổ</a></li>
+                                <li><a href="#">giày thời trang</a></li>
+                                <li><a href="#">giày cầu lông</a></li>
+                            </ul>
+                        </nav>         
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- làm mờ màn hình -->
+        <div class=" overlay"></div>
+        <!-- Bộ lọc loại giày -->
+        <div class="filter-section">
+            <div class="filter-title">Loại Giày</div>
+            <div class="checkbox-group">
+                <label><input type="radio" name="shoe-type" value="di-bo" checked> Giày Chạy Bộ</label>
+                <label><input type="radio" name="shoe-type" value="cau-long"> Giày Thời Trang</label>
+                <label><input type="radio" name="shoe-type" value="the-thao"> Giày Bóng Rổ</label>
+                <label><input type="radio" name="shoe-type" value="cau-long"> Giày Cầu Lông</label>
+            </div>
+        </div>
+        <div class="filter-product">
+            <p>sắp xếp theo:</p>
+            <select name="sort" id="sort">
+                <option value="1" data-filter="&sort_by">sản phẩm nổi bật</option>
+                <option value="2" data-filter="&sort_by">giá: tăng dần</option>
+                <option value="3" data-filter="&sort_by">giá: giảm dần</option>
+                <option value="4" data-filter="&sort_by">tên: từ A-Z</option>
+                <option value="5" data-filter="&sort_by">tên: từ Z-A</option>
+                <option value="6" data-filter="&sort_by">cũ nhất</option>
+                <option value="7" data-filter="&sort_by">mới nhất</option>
+                <option value="8" data-filter="&sort_by">bán chạy nhất</option>
+            </select>    
+        </div>
+        <!-- product -->
+        <div class="product-specific">
+            <ul class="product-list">
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ FEIDIAN 3 CHALLENGER nam ARMT037-1/Giày chạy bộ FEIDIAN 3 CHALLENGER nam ARMT037-1.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nam ARMT037-1</a>
+                    </div>
+                    <div class="product-price">1,850,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Chitu 7 Pro Nam ARPU001-6V/Giày chạy bộ Chitu 7 Pro Nam ARPU001-6V.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy Nam ARPU001-6V</a>
+                    </div>
+                    <div class="product-price">2,556,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày Chạy bộ Nam AGLT103-3B/Giày Chạy bộ Nam AGLT103-3B.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày Chạy bộ Nam AGLT103-3B</a>
+                    </div>
+                    <div class="product-price">1,200,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Lie Jun 6th nam ARZS003-13/Giày chạy bộ Lie Jun 6th nam ARZS003-13.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nam ARZS003-13</a>
+                    </div>
+                    <div class="product-price">967,000</div>
+                </li>
+            </ul>
+            <ul class="product-list">
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS081-1/Giày bóng rổ nam ABAS081-1.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABAS081-1</a>
+                    </div>
+                    <div class="product-price">1,953,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS071-5/Giày bóng rổ nam ABAS071-5.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABAS071-5</a>
+                    </div>
+                    <div class="product-price">2,435,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABPS039-4/Giày bóng rổ nam ABPS039-4.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABPS039-4</a>
+                    </div>
+                    <div class="product-price">1,561,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS073-7/Giày bóng rổ nam ABAS073-7.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABAS073-7</a>
+                    </div>
+                    <div class="product-price">2,455,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS081-1/Giày bóng rổ nam ABAS081-1.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABAS081-1</a>
+                    </div>
+                    <div class="product-price">1,953,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS071-5/Giày bóng rổ nam ABAS071-5.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABAS071-5</a>
+                    </div>
+                    <div class="product-price">2,435,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABPS039-4/Giày bóng rổ nam ABPS039-4.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABPS039-4</a>
+                    </div>
+                    <div class="product-price">1,561,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS073-7/Giày bóng rổ nam ABAS073-7.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày bóng rổ nam ABAS073-7</a>
+                    </div>
+                    <div class="product-price">2,455,000</div>
+                </li>
+            </ul>
+            <ul class="product-list">
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Nữ ARHT020-9V/Giày chạy bộ Nữ ARHT020-9V.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARHT020-9V</a>
+                    </div>
+                    <div class="product-price">1,340,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARMT014-7V</a>
+                    </div>
+                    <div class="product-price">2,111,981</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARVS016-3</a>
+                    </div>
+                    <div class="product-price">2,317,600</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Yue Ying 2 nữ ARHT006-7/Giày chạy bộ Yue Ying 2 nữ ARHT006-7.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARHT006-7</a>
+                    </div>
+                    <div class="product-price">1,858,679</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Nữ ARHT020-9V/Giày chạy bộ Nữ ARHT020-9V.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARHT020-9V</a>
+                    </div>
+                    <div class="product-price">1,340,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARMT014-7V</a>
+                    </div>
+                    <div class="product-price">2,111,981</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARVS016-3</a>
+                    </div>
+                    <div class="product-price">2,317,600</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Yue Ying 2 nữ ARHT006-7/Giày chạy bộ Yue Ying 2 nữ ARHT006-7.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARHT006-7</a>
+                    </div>
+                    <div class="product-price">1,858,679</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Nữ ARHT020-9V/Giày chạy bộ Nữ ARHT020-9V.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARHT020-9V</a>
+                    </div>
+                    <div class="product-price">1,340,000</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARMT014-7V</a>
+                    </div>
+                    <div class="product-price">2,111,981</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARVS016-3</a>
+                    </div>
+                    <div class="product-price">2,317,600</div>
+                </li>
+                <li>
+                    <div class="product-img">
+                        <a href="" class="product-display">
+                            <img class="image" src="/img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Yue Ying 2 nữ ARHT006-7/Giày chạy bộ Yue Ying 2 nữ ARHT006-7.jpg" alt="">
+                        </a>
+                        <a class="product-buy" href="">Mua ngay</a>
+                    </div>
+                    <div class="product-name">
+                        <a class="name" href="">Giày chạy bộ Nữ ARHT006-7</a>
+                    </div>
+                    <div class="product-price">1,858,679</div>
+                </li>
+            </ul>
+        </div>  
+        <!-- footer -->
+        <div class="footer-main">
+            <footer class="footer">
+                <div class="footer-information">
+                    <ul class="footer-list">
+                        <div class="footer-heading">
+                            <h3 class="heading">LI-NING DISTRIBUTOR IN VIET NAM</h3>
+                        </div>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Giới thiệu</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Hệ thống cửa hàng</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Thông tin liên hệ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <div class="footer-heading">
+                            <h3 class="heading">CHÍNH SÁCH BÁN HÀNG</h3>
+                        </div>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Bảo mật</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Thanh toán</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Vận chuyển</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Đổi trả hàng mua online</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Đổi trả hàng mua tại cửa hàng</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <div class="footer-heading">
+                            <h3 class="heading">HỖ TRỢ KHÁCH HÀNG</h3>
+                        </div>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Điều khoản dịch vụ</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Hướng dẫn đo size và bảo quản</a>
+                        </li>
+                        <li class="footer-infor">
+                            <a class="footer-name" href="">Hướng dẫn thanh toán</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <div class="footer-heading">
+                            <h3 class="heading">NEWSLETTER</h3>
+                        </div>
+                        <div class="footer-paragrahp">
+                            <p>Đăng ký nhận bản tin để cập nhật <br>những tin tức mới nhất về Li-Ning <br>Distributor in Vietnam</p>
+                            <div class="footer-input">
+                                <input class="footer-email" type="email" placeholder="Địa chỉ email của bạn">
+                                <a class="footer-submit-font" href="">
+                                    <input class="footer-submit" type="submit" value="Đăng ký">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-items">
+                            <li class="footer-icon">
+                                <a class="icon" href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer-icon">
+                                <a class="icon" href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="footer-icon">
+                                <a class="icon" href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="footer-icon">
+                                <a class="icon" href="">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="/web/script.js"></script> 
+</html>

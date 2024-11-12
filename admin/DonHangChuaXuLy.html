@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/css/all.css">
+</head>
+<body>
+    <section class="admin">
+        <div class="row">
+            <div class="admin-sidebar">
+                <div class="navbar-top">
+                    <img src="./Logo.png" alt="Logo">
+                </div>
+                <div class="sidebar-content">
+                    <ul>
+                        <li class="sidebar-infor">
+                            <a class="items" href="/admin/admin.html">
+                                <i class="fa-brands fa-slack"></i>
+                                Dashboard
+                            </a>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Purchase Order
+                                <ul class="list-menu">
+                                    <li>
+                                        <a class="function" href="/admin/TatCaDonHang.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Tất cả đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaXacNhan.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangChuaXuLy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đang chờ xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaGiao.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng giao thành công
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangHuy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã hủy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Product
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/DanhSachSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Danh sách
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="/admin/ThemSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm thông tin
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Quản lý users
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/CauHinhUser.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Cấu hình users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="/admin/ThemTaiKhoan.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm tài khoản
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content">
+                <div class="content-top">
+                    <div class="left">
+                    </div>
+                    <div class="right">
+                        <ul class="list-content">
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-bell top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-comment top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <img src="../admin/ảnh đại diện.jpg" alt="Ảnh đại diện admin">
+                                    <p>Tôn Quyền</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-heading">
+                        <a class="link-heading" href="">
+                            <h3 class="heading">Đơn hàng chưa xử lý</h3>
+                        </a>
+                    </div>
+                    <div class="content-body">
+                        <div class="content-confirm">
+                            <table>
+                                <tr class="confirm-title">
+                                    <td>STT</td>
+                                    <td>Họ và tên</td>
+                                    <td>SĐT</td>
+                                    <td>Email</td>
+                                    <td>Địa chỉ</td>
+                                    <td>Ghi chú</td>
+                                    <td>Chi tiết</td>
+                                    <td>Ngày</td>
+                                    <td>Trạng thái</td>
+                                    <td>Tác vụ</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Tôn Quyền</td>
+                                    <td>0787554657</td>
+                                    <td>tonquyen2105@gmail.com</td>
+                                    <td>27C phạm vấn, phường phú thọ hòa, quận tân phú</td>
+                                    <td>Giao nhanh</td>
+                                    <td class="detail">
+                                        <a href="/admin/ChiTietSanPham.html">
+                                            <h3>Chi tiết</h3>
+                                        </a>
+                                    </td>
+                                    <td>26/10/2024 09:10:59</td>
+                                    <td class="wait-confirm"><h3>Chưa xử lý</h3></td>
+                                    <td class="delete"><h3>Xóa</h3></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Lý Minh Huy</td>
+                                    <td>0787554657</td>
+                                    <td>tonquyen2105@gmail.com</td>
+                                    <td>27C phạm vấn, phường phú thọ hòa, quận tân phú</td>
+                                    <td>Giao nhanh</td>
+                                    <td class="detail">
+                                        <a href="/admin/ChiTietSanPham.html">
+                                            <h3>Chi tiết</h3>
+                                        </a>
+                                    </td>
+                                    <td>26/10/2024 09:10:59</td>
+                                    <td class="wait-confirm"><h3>Chưa xử lý</h3></td>
+                                    <td class="delete"><h3>Xóa</h3></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

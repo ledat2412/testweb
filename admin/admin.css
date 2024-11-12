@@ -1,0 +1,926 @@
+:root {
+    --sidebar-color: #414e66;
+    --content-color: #b5bfc7;
+    --hover-color: #000000;
+    --content-top: #f2f7fb;
+    --main-transition: all 0.2s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 20% 80%;
+}
+
+.admin-sidebar {
+    background-color: var(--sidebar-color);
+    /* height: 100vh; */
+}
+
+.navbar-top {
+    text-align: center;
+    height: 70px;
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+}
+
+.navbar-top img {
+    width: 60px;
+    height: 60px;
+}
+
+.sidebar-infor {
+    list-style: none;
+    padding: 20px 30px;
+    cursor: pointer;   
+    transition: var(--main-transition); 
+}
+
+.sidebar-infor:hover {
+    background: var(--hover-color);
+}
+
+
+.items {
+    text-decoration: none;
+    color: var(--content-color);
+}
+
+.list-menu {
+    list-style: none;
+    margin-top: 15px;
+    /* display: none; */
+}
+
+.sidebar-infor.active .list-menu {
+    display: block;
+}
+
+.list-menu li {
+    margin: 0px 0px 15px 22px;
+}
+
+.function {
+    text-decoration: none;
+    color: var(--content-color);
+}
+/* ===========admin-content============= */
+
+.admin-content {
+    background-color: var(--content-color);
+}
+
+.content-top {
+    height: 80px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--content-top);
+}
+
+.right {
+    display: flex;
+}
+
+.right .list-content {
+    display: flex;
+}
+
+.right .list-content .content-icon {
+    display: flex;
+}
+
+.list-content {
+    list-style: none;
+    align-items: center;
+}
+
+.content-icon {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.content-icon i {
+    color: black;
+    font-size : 30px;
+}
+
+.content-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content-icon p {
+    color: black;
+    font-size: 25px;
+    padding-left: 2px;
+}
+
+/* ===========THEMSANPHAM============ */
+
+.content-heading {
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.link-heading {
+    text-decoration: none;
+}
+
+.heading {
+    border-bottom: 3px solid #000000;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+}
+
+.content-add {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    height: 82vh;
+}
+
+.add-infor-left {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-infor-second {
+    margin-top: 20px;
+}
+
+.add-infor-first, .add-infor-second {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* sử dụng width ở đây để nó chiếm 80% thẻ cha là thẻ .add-infor-firs
+    vì ở trên ta cho phần nd này chiếm 60% điều đó có nghĩa với thẻ này
+    đang là 100% khi 60% vì vậy khi ta cho nó chiếm 80% của 60% thì sẽ vào
+    khoảng cách ta ưng */
+    width: 90%;
+}
+
+.first-infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.first-infor label {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(61, 61, 148);
+}
+
+.first-infor input {
+    height: 30px;
+    width: 450px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    background-color: #f2f7fb;
+}
+
+.first-infor textarea {
+    width: 460px;
+    height: 60px;
+    resize: none;
+    outline: none;
+    background-color: #f2f7fb;
+}
+
+.add-infor-right {
+    background-color: white;
+}
+
+.add-img-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f7fb;;
+    height: 400px;
+    border: 3px dashed black;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+
+.add-img-product i {
+    font-size: 30px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.add-img-product label {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.add-img-product input {
+    display: none;
+}
+
+.add-submit-product {
+    background-color: #f2f7fb;;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 180.79px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.add-submit-product:hover {
+    background-color: red;
+}
+
+.add-submit-product h3 {
+    font-size: 20px;
+}
+
+.repair {
+    text-align: center;
+}
+
+.repair a {
+    color: black;
+}
+
+/* ===========CAU-HINH-USER============ */
+/* .content-add {
+    background-color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    padding: 15px 0px;
+}
+
+.link-add {
+    text-decoration: none;
+}
+
+.add {
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    background-color: rgb(112, 112, 201);
+    color: black;
+    font-size: 25px;
+    margin-right: 30px;
+    border-radius: 5px;
+} */
+
+.config-user {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #fff;
+}
+.list-user {
+    max-width: 100%;
+    max-height: 670px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 650px;
+    /* height: 82vh; */
+    /* margin: 0 10px; */
+}
+.table-user {
+    width: 100%;
+    border: 2px solid black;
+     /* giúp cho các đường viền gọp lại thành 1 đường viền duy nhất */
+     border-collapse: collapse;
+}
+
+.table-user td {
+    border: 1px solid black;
+}
+
+.tr-title td {
+    height: 40px;
+    text-align: center;
+}
+
+.td-display i {
+    color: black;
+    font-weight: 600;
+}
+
+.tr-infor {
+    height: 70px;
+    text-align: center;
+}
+
+/* ============Danh-Sach-San-Pham============= */
+
+.content-list-product {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    background-color:#fff;
+    height: 650px;
+    overflow-y:auto;
+}
+
+table{
+    text-align:center;
+    border-collapse: collapse;
+    border:2px solid black;
+}
+
+td{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    height:7.3vh;
+}
+
+.table-heading{
+    width:15vw;
+    height:5vh;
+    background-color:azure;
+    border-bottom:2px solid black;
+    border-left: 2px solid black;
+}
+
+.last-col{
+    width:5vw;
+    background-color: azure;
+    border-bottom:2px solid black;
+    border-left: 2px solid black;
+}
+
+.stt-heading{
+    width:5vw;
+    background-color: azure;
+    border-bottom:2px solid black;
+}
+
+.stt input{
+    width: 3vw;
+    height: 2.5vh;
+    text-align: center;
+}
+
+img{
+    width: 4vw;
+}
+
+/* =============Them-Tai-Khoan============= */
+.content-add-account {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    overflow: hidden;
+    height: 650px;
+}
+
+.content-account-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 30px;
+}
+
+.content-account-infor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.content-account-type {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content-account-type label {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(67, 67, 163);
+    width: 100px;
+}
+
+.content-account-type select {
+    margin-left: 64px;
+    width: 505px;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+    background-color: #f2f7fb;
+}
+
+.content-account-type option {
+    background-color: #f2f7fb;
+}
+
+.content-account-infor {
+    margin-bottom: 30px;
+}
+
+.content-account-infor input{
+    width: 500px; 
+    height: 30px; 
+    outline: none;
+    border-radius: 7px;
+    padding-left: 5px;
+    background-color: #f2f7fb;
+}
+
+.content-account-infor label {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(67, 67, 163);
+    width: 200px; 
+}
+
+.content-account-checkbox1 label {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(67, 67, 163);
+    width: 100px; 
+}
+
+.content-account-checkbox1 input {
+    margin-left: 120px;
+}
+
+.content-account-checkbox2 {
+    margin-top: 30px;
+}
+
+.content-account-checkbox2 label {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(67, 67, 163);
+    width: 100px; 
+}
+.content-account-checkbox2 input { 
+    /* margin-left phụ thuộc vào width của checkbox2 phía trên */
+    margin-left: 200px;
+    margin-bottom: 15px;
+} 
+
+.edit-text {
+    font-size: 20px;
+}
+
+.content-save input {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 25px 0px 0px 200px;
+}
+
+.content-save input:hover {
+    background-color: red;
+}
+
+.content-account-right {
+    display: flex;
+    /* căn theo chiều dọc */
+    align-items: flex-start;
+    /* căn theo chiều ngang */
+    justify-content: flex-end; 
+    width: 40%;
+    height: 300px;
+    background-color: #f2f7fb;
+    margin-top: 30px;
+    margin-right: 30px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    /* thiết lập position để điều chỉnh vị trí cho thẻ input :> */
+    position: relative;
+}
+
+.content-account-img input {
+    display: none;
+}
+
+.content-account-img label {
+    position: absolute;
+    top: 135px;
+    right: 165px;
+    font-size: 25px;
+}
+
+/* ===========Sua-Thong-Tin-User============= */
+.content-repair-user {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    /* height: 82vh; */
+    height: 650px;
+}
+
+.product-repair-infor-user {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.user-infor{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 30px;
+    gap: 50px;
+}
+.user-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-title label {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user-title input {
+    background-color: #f2f7fb;
+    color: black;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.Image-user {
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: #f2f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    border: 2px dashed black;
+}
+
+.Image-user input {
+    display: none;
+    margin-left: 80px;
+}
+
+.Image-user label {
+    font-size: 20px;
+}
+
+.submit-user {
+    display: flex;
+    background-color: #f2f7fb;
+    border: 2px solid black;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.submit-user:hover {
+    background-color: red;
+}
+
+.submit-user a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+
+/* ===========Sua-San-Pham============= */
+.content-repair {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    /* height: 82vh; */
+    height: 650px;
+}
+
+.product-repair-infor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-infor{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 30px;
+    gap: 50px;
+}
+.product-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title label {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-title input {
+    background-color: #f2f7fb;
+    color: black;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.Image {
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: #f2f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    border: 2px dashed black;
+}
+
+.Image input {
+    display: none;
+    margin-left: 80px;
+}
+
+.Image label {
+    font-size: 20px;
+}
+
+.submit-product {
+    display: flex;
+    background-color: #f2f7fb;
+    border: 2px solid black;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.submit-product:hover {
+    background-color: red;
+}
+
+.submit-product a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+
+/* ============Truoc-Khi-Chinh============= */
+.Image-dai-dien img{
+    margin-left: 50px;
+    margin-top: 25px;
+    width: 410px;
+    border: 2px dashed rgb(61, 61, 148);
+    border-radius:10px;
+    
+}
+
+.submit-product-infor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f7fb;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 160px;
+    height:40px;
+    margin-left: 170px;
+    margin-top: 80px;
+}
+
+.submit-product-infor:hover {
+    background-color: red;
+}
+
+.submit-product-infor a {
+    text-decoration: none;   
+    font-size: 20px;
+    color: black; 
+}
+
+.edit-content-body{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    /* height: 82vh; */
+    height: 650px;
+}
+
+.product-infor{
+    width: 800px;
+    margin-top: 25px;
+}
+
+.product-title{
+    font-size:large;
+    font-weight: bold;
+}
+
+.product-data{
+    font-size: large;
+    border-bottom: 1px solid #667287;
+    height: 25px;
+    width: 600px;
+}
+
+/* ============Xoa-san-pham============= */
+.popup-container{
+    position: fixed;    
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.popup-container:target{
+    display:block;
+}
+
+#warning-popup .popup-content{
+    position: relative;
+    background-color: #f2f7fb;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 400px;
+    height: 200px;
+    margin: 30vh auto;
+    box-shadow: 2px 2px 7px;
+}
+
+.popup-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    background-color: rgb(164, 157, 157);
+    color: white;
+    font-size:25px;
+    height: 50px;
+}
+
+.popup-data{
+    font-size:20px;
+    margin-bottom: 35px;
+}
+
+.yes-no-button{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.yes-no-button button{
+    box-shadow: 2px 2px 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(221, 218, 218);
+    width: 150px;
+    height: 30px;
+}
+
+
+/* ==============Don-Hang-Da-Xac-Nhan=============== */
+
+.content-confirm {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: white;
+    /* bỏ chiều cao 82.55vh thì bảng sau khi lọc sẽ ra bình thường */
+    /* height: 80vh; */
+    /* không cần dùng height để xài overflow-y chỉ cần max-height là được */
+    max-height: 650px;
+    overflow-y: auto;
+}
+
+.content-confirm table {
+    width: 100%;
+}
+
+.confirm-title {
+    background-color: black;
+}
+
+.confirm-title td {
+    color: white;
+    font-weight: 600;
+}
+
+.content-confirm td {
+    border: none;
+}
+
+.confirm h3 {
+    background-color: green;
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.detail h3 {
+    background-color: rgb(72, 72, 202);
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.delete h3 {
+    background-color: rgb(202, 59, 59);
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.detail a {
+    text-decoration: none;
+}
+
+/* ============Don-Hang-Da-Huy============= */
+.cancel h3 {
+    background-color: red;
+    color: white;
+}
+
+/* ============Don-Hang-Da-Giao============= */
+.delivered h3 {
+    background-color: purple;
+    color: white;
+}
+
+/* ============Don-Hang-Da-Giao============= */
+.wait-confirm h3 {
+    background-color: orangered;
+    color: white;
+}
+
+/* ===========Loc========== */
+.content-filter {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    max-height: 40px;
+}
+
+.content-filter select {
+    height: 40px;
+    width: 500px;
+    outline: none;
+}
+
+.content-filter button {
+    padding: 10px;
+    height: 40px;
+}
+/* ============Chi-Tiet-San-Pham============ */
+
+.content-detail {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: white;
+    /* height: 80vh; */
+    max-height: 671px;
+    overflow-y: auto;
+}
+
+.content-detail table {
+    height: 30px;
+    width: 100%;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/css/all.css">
+</head>
+<body>
+    <section class="admin">
+        <div class="row">
+            <div class="admin-sidebar">
+                <div class="navbar-top">
+                    <img src="./Logo.png" alt="Logo">
+                </div>
+                <div class="sidebar-content">
+                    <ul>
+                        <li class="sidebar-infor">
+                            <a class="items" href="/admin/admin.html">
+                                <i class="fa-brands fa-slack"></i>
+                                Dashboard
+                            </a>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Purchase Order
+                                <ul class="list-menu">
+                                    <li>
+                                        <a class="function" href="/admin/TatCaDonHang.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Tất cả đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaXacNhan.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangChuaXuLy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đang chờ xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaGiao.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng giao thành công
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangHuy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã hủy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Product
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/DanhSachSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Danh sách
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="/admin/ThemSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm thông tin
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Quản lý users
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/CauHinhUser.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Cấu hình users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="/admin/ThemTaiKhoan.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm tài khoản
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content">
+                <div class="content-top">
+                    <div class="left">
+                    </div>
+                    <div class="right">
+                        <ul class="list-content">
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-bell top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-comment top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <img src="../admin/ảnh đại diện.jpg" alt="Ảnh đại diện admin">
+                                    <p>Tôn Quyền</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-heading">
+                        <a class="link-heading" href="">
+                            <h3 class="heading">Thêm sản phẩm</h3>
+                        </a>
+                    </div>
+                    <div class="content-body">
+                        <div class="content-add">
+                            <div class="add-infor-left">
+                                <div class="add-infor-first">
+                                    <div class="first-infor">
+                                        <label for="">Danh mục:</label>
+                                        <input class="list" type="text">
+                                    </div>
+                                    <div class="first-infor">
+                                        <label for="">Mã sản phẩm:</label>
+                                        <input class="code" type="text">
+                                    </div>
+                                    <div class="first-infor">
+                                        <label for="">Tên sản phẩm:</label>
+                                        <input class="name" type="text">
+                                    </div>
+                                    <div class="first-infor">
+                                        <label for="">Giá sản phẩm:</label>
+                                        <input class="price" type="text">
+                                    </div>
+                                    <div class="first-infor">
+                                        <label for="">Khuyến mãi:</label>
+                                        <input class="discount" type="text">
+                                    </div>
+                                </div>
+    
+                                <div class="add-infor-second">
+                                    <div class="first-infor">
+                                        <label for="">Tiêu đề:</label>
+                                        <input class="title-product" type="text">
+                                    </div>
+                                    <div class="first-infor">
+                                        <label for="">Đường dẫn:</label>
+                                        <input class="link-product" type="text">
+                                    </div>
+                                    <div class="first-infor">
+                                        <label for="">Mô tả:</label>
+                                        <textarea name="" class="describe-product" rows="10" cols="5">Đặc điểm nổi bật</textarea>
+                                    </div>
+                                    <div class="first-infor">
+                                        <label for="">Thông tin sản phẩm:</label>
+                                        <textarea name="" class="infor-product" rows="10" cols="5">Chi tiết sản phẩm</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-infor-right">
+                                <div class="add-img-product">
+                                    <label for="file"><i class="fa-solid fa-upload"></i>Upload your files</label>
+                                    <input type="file" class="img-product" id="file">
+                                </div>
+                                <div class="add-submit-product">
+                                    <h3 class="submit-heading">Thêm sản phẩm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

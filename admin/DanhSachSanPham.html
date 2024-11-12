@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/css/all.css">
+</head>
+<body>
+    <section class="admin">
+        <div id="warning-popup" class="popup-container">
+            <div class="popup-content">
+                <div class="popup-heading">
+                    <h3>Warning</h3>
+                </div>
+                <div class="popup-data">
+                    Bạn chắc chắn muốn xóa sản phẩm này!!!
+                </div>
+                <div class="yes-no-button">
+                    <button>Yes</button>
+                    <a href="#">
+                        <button>No</button>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="admin-sidebar">
+                <div class="navbar-top">
+                    <img src="./Logo.png" alt="Logo">
+                </div>
+                <div class="sidebar-content">
+                    <ul>
+                        <li class="sidebar-infor">
+                            <a class="items" href="/admin/admin.html">
+                                <i class="fa-brands fa-slack"></i>
+                                Dashboard
+                            </a>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Purchase Order
+                                <ul class="list-menu">
+                                    <li>
+                                        <a class="function" href="/admin/TatCaDonHang.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Tất cả đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaXacNhan.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangChuaXuLy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đang chờ xác nhận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangDaGiao.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng giao thành công
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="function" href="/admin/DonHangHuy.html">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                            Đơn hàng đã hủy
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Product
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/DanhSachSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Danh sách
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="/admin/ThemSanPham.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm thông tin
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-infor">
+                            <a class="items" href="">
+                                <i class="fa-regular fa-folder"></i>
+                                Quản lý users
+                            </a>
+                            <ul class="list-menu">
+                                <li>
+                                    <a class="function" href="/admin/CauHinhUser.html">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Cấu hình users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="function" href="">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        Thêm tài khoản
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content">
+                <div class="content-top">
+                    <div class="left">
+                    </div>
+                    <div class="right">
+                        <ul class="list-content">
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-bell top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <i class="fa-solid fa-comment top-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="content-icon" href="">
+                                    <img src="../admin/ảnh đại diện.jpg" alt="Ảnh đại diện admin">
+                                    <p>Tôn Quyền</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-heading">
+                        <a class="link-heading" href="">
+                            <h3 class="heading">Danh sách sản phẩm</h3>
+                        </a>
+                    </div>
+                    <div class="content-body">
+                        <div class="content-list-product">
+                            <table>
+                                <tr>
+                                    <th class="stt-heading">STT</th>
+                                    <th class="table-heading">Hình Ảnh</th>
+                                    <th class="table-heading">Tên Sản Phẩm</th>
+                                    <th class="table-heading">Mã Sản Phẩm</th>
+                                    <th class="table-heading">Giá Bán</th>
+                                    <th class="table-heading">Ngày Đăng</th>
+                                    <th class="last-col">Tác Vụ</th>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">1</td>
+                                    <td><img src="../img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS071-5/Giày bóng rổ nam ABAS071-5.jpg"></td>
+                                    <td>Giày bóng rổ nam</td>
+                                    <td>ABAS071-5</td>
+                                    <td>111.111VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">2</td>
+                                    <td><img src="../img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS073-7/Giày bóng rổ nam ABAS073-7.jpg"></td>
+                                    <td>Giày bóng rổ nam</td>
+                                    <td>ABAS073-7</td>
+                                    <td>222.222VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">3</td>
+                                    <td><img src="../img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABAS081-1/Giày bóng rổ nam ABAS081-1.jpg"></td>
+                                    <td>Giày bóng rổ nam</td>
+                                    <td>ABAS081-1</td>
+                                    <td>333.333VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">4</td>
+                                    <td><img src="../img/Sản Phẩm/giày bóng rổ/Giày bóng rổ nam ABPS039-4/Giày bóng rổ nam ABPS039-4.jpg"></td>
+                                    <td>Giày bóng rổ nam</td>
+                                    <td>ABPS039-4</td>
+                                    <td>444.444VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">5</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3/Giày chạy bộ Boom Infinity 2 nữ ARVS016-3.jpg"></td>
+                                    <td>Giày chạy bộ Boom Infinity 2 nữ</td>
+                                    <td>ARVS016-3</td>
+                                    <td>555.555VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">6</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V/Giày chạy bộ Chitu 6 Pro nữ ARMT014-7V.jpg"></td>
+                                    <td>Giày chạy bộ Chitu 6 Pro nữ</td>
+                                    <td>ARMT014-7V</td>
+                                    <td>666.666VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">7</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Chitu 7 Pro Nam ARPU001-6V/Giày chạy bộ Chitu 7 Pro Nam ARPU001-6V.jpg"></td>
+                                    <td>Giày chạy bộ Chitu 7 Pro Nam</td>
+                                    <td>ARPU001-6V</td>
+                                    <td>777.777VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">8</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày chạy bộ FEIDIAN 3 CHALLENGER nam ARMT037-1/Giày chạy bộ FEIDIAN 3 CHALLENGER nam ARMT037-1.jpg"></td>
+                                    <td>Giày chạy bộ FEIDIAN 3 CHALLENGER nam</td>
+                                    <td>ARMT037-1</td>
+                                    <td>888.888VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">9</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày chạy bộ Lie Jun 6th nam ARZS003-13/Giày chạy bộ Lie Jun 6th nam ARZS003-13.jpg"></td>
+                                    <td>Giày chạy bộ Lie Jun 6th nam</td>
+                                    <td>ARZS003-13</td>
+                                    <td>999.999VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!------------------------------------->
+                                <tr>
+                                    <td class="stt">10</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày Chạy bộ Nam AGLT103-3B/Giày Chạy bộ Nam AGLT103-3B.jpg"></td>
+                                    <td>Giày Chạy bộ Nam</td>
+                                    <td>AGLT103-3B</td>
+                                    <td>1.111.111VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="stt">10</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày Chạy bộ Nam AGLT103-3B/Giày Chạy bộ Nam AGLT103-3B.jpg"></td>
+                                    <td>Giày Chạy bộ Nam</td>
+                                    <td>AGLT103-3B</td>
+                                    <td>1.111.111VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <td class="stt">10</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày Chạy bộ Nam AGLT103-3B/Giày Chạy bộ Nam AGLT103-3B.jpg"></td>
+                                    <td>Giày Chạy bộ Nam</td>
+                                    <td>AGLT103-3B</td>
+                                    <td>1.111.111VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <td class="stt">10</td>
+                                    <td><img src="../img/Sản Phẩm/giày chạy bộ/Giày Chạy bộ Nam AGLT103-3B/Giày Chạy bộ Nam AGLT103-3B.jpg"></td>
+                                    <td>Giày Chạy bộ Nam</td>
+                                    <td>AGLT103-3B</td>
+                                    <td>1.111.111VND</td>
+                                    <td>21/10/2024</td>
+                                    <td>
+                                        <div class="repair">
+                                            <a href="/admin/TruocKhiChinh.html"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#warning-popup"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>    
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../admin/Popup.js"></script>
+</body>
+</html>
